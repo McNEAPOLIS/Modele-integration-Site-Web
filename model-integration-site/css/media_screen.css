@@ -1,0 +1,70 @@
+/* Feuille de styles pour média screen */
+
+/* mobile first */
+@media screen and (max-width: 550px){
+
+	/* Heading */
+
+	header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* Logo */
+
+	#logo{
+		width: 50%;
+	}
+
+	/* Menu */
+
+	.nav, .nav_main{
+    	display: flex;
+    	flex-direction: column;
+    	align-items: start;
+    }
+
+    /* Grid - responsive */
+
+	.grid_container{
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 1em 1em;
+	grid-template-areas: "un un un"
+						 "deux deux deux"
+						 "trois trois trois"
+						 "quatre quatre quatre"
+						 "cinq cinq cinq"
+						 ;
+    }
+
+    .button, #second_container, .footer{
+		display: flex;
+		flex-direction: column;
+	}
+
+}
+
+/* Ecran moyen pour Tablette */
+
+@media screen and (min-width: 551px) and (max-width: 940px){
+
+	/* Footer */
+
+	.footer{
+		display: grid; 
+		grid-template-columns: 1fr 1fr;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	/* Logo */
+
+	#logo{
+		width: 25%;
+	}
+	
+}
+
